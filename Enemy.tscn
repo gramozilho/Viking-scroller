@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Viking.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Enemy.gd" type="Script" id=2]
+
+[node name="Viking" instance=ExtResource( 1 )]
+collision_mask = 1
+script = ExtResource( 2 )
+
+[node name="Body" parent="." index="0"]
+scale = Vector2( -2, 2 )
